@@ -3,14 +3,18 @@
 
 
 def is_even_len(string: str) -> bool:
-    pass
+    nb = len(string)
+    if (nb % 2) == 0:
+        return True
 
 
 def remove_third_char(string: str) -> str:
-    pass
+    remove = string[0:2]+""+string[3:]
+    return remove
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
+    # return replace_char(string, old_char, new_char)
     pass
 
 
