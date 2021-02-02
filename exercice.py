@@ -32,7 +32,7 @@ def get_number_of_char(string: str, char: str) -> int:
 
 def get_number_of_words(sentence: str, word: str) -> int:
     occurence = 0
-    for x in sentence:
+    for x in sentence.split(): #.split sépare les mots d'une phrase
         if x == word:
             occurence += 1
     return occurence
