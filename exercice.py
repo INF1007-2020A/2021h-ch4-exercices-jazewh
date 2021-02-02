@@ -6,6 +6,8 @@ def is_even_len(string: str) -> bool:
     nb = len(string)
     if (nb % 2) == 0:
         return True
+    else:
+        return  False
 
 
 def remove_third_char(string: str) -> str:
@@ -29,7 +31,11 @@ def get_number_of_char(string: str, char: str) -> int:
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
+    occurence = 0
+    for x in sentence:
+        if x == word:
+            occurence += 1
+    return occurence
 
 
 def main() -> None:
